@@ -1,0 +1,70 @@
+{
+  "bundler": "rollup",
+  "shimport": "2.0.4",
+  "assets": {
+    "main": "client.cef8e0d0.js"
+  },
+  "css": {
+    "main": [
+      "client-a2a37a6a.css"
+    ]
+  },
+  "dependencies": {
+    "index.svelte": [
+      "index.37e9b345.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "withdraw.svelte": [
+      "withdraw.75dbf0bd.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "discord.svelte": [
+      "discord.40c1f8b6.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "staff/index.svelte": [
+      "index.10e2f539.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "staff/register.svelte": [
+      "register.58d0ec0d.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "staff/groups.svelte": [
+      "groups.4ebb85ee.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "staff/login.svelte": [
+      "login.5a745417.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "staff/stats.svelte": [
+      "stats.83335f49.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "blog/index.svelte": [
+      "index.4b83fb49.js",
+      "inject_styles.5607aec6.js",
+      "index-7ed37c94.css"
+    ],
+    "blog/tutorial.svelte": [
+      "tutorial.cd349dd0.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "earn.svelte": [
+      "earn.93f9e8b1.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "link.svelte": [
+      "link.51561ca6.js",
+      "inject_styles.5607aec6.js"
+    ],
+    "faq.svelte": [
+      "faq.64743508.js",
+      "inject_styles.5607aec6.js"
+    ]
+  },
+  "legacy_assets": {
+    "main": "client.fc3ec02e.js"
+  }
+}

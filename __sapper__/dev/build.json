@@ -1,0 +1,57 @@
+{
+  "bundler": "rollup",
+  "shimport": "2.0.4",
+  "assets": {
+    "main": "client.9085a597.js"
+  },
+  "css": {},
+  "dependencies": {
+    "index.svelte": [
+      "index.de258608.js"
+    ],
+    "withdraw.svelte": [
+      "withdraw.75c23d98.js"
+    ],
+    "discord.svelte": [
+      "discord.2ebf40da.js"
+    ],
+    "staff/index.svelte": [
+      "index.b04827c0.js"
+    ],
+    "staff/register.svelte": [
+      "register.b4b07198.js"
+    ],
+    "staff/login.svelte": [
+      "login.bfef80c3.js"
+    ],
+    "earn/index.svelte": [
+      "index.17b7137a.js"
+    ],
+    "earn/offerwalls.svelte": [
+      "offerwalls.e97b42a1.js",
+      "Loader.8acab25c.js"
+    ],
+    "earn/promocodes.svelte": [
+      "promocodes.93000cb2.js",
+      "Loader.8acab25c.js"
+    ],
+    "earn/giveaway.svelte": [
+      "giveaway.6e2c9bef.js",
+      "Loader.8acab25c.js"
+    ],
+    "earn/invite.svelte": [
+      "invite.3fdf99a1.js",
+      "Loader.8acab25c.js"
+    ],
+    "earn/quests.svelte": [
+      "quests.2acfdb2a.js",
+      "Loader.8acab25c.js"
+    ],
+    "link.svelte": [
+      "link.a15b4521.js"
+    ],
+    "faq.svelte": [
+      "faq.e60fc829.js"
+    ]
+  }
+}
