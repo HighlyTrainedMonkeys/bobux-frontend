@@ -2,56 +2,73 @@
   "bundler": "rollup",
   "shimport": "2.0.4",
   "assets": {
-    "main": "client.9085a597.js"
+    "main": "client.8d466d64.js"
   },
   "css": {},
   "dependencies": {
     "index.svelte": [
-      "index.de258608.js"
+      "index.255e16e7.js"
     ],
     "withdraw.svelte": [
-      "withdraw.75c23d98.js"
+      "withdraw.b3782a25.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "discord.svelte": [
-      "discord.2ebf40da.js"
+      "discord.942ea7ba.js"
     ],
     "staff/index.svelte": [
-      "index.b04827c0.js"
+      "index.51428d1c.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js",
+      "auth.esm.7a3eb8cb.js"
     ],
     "staff/register.svelte": [
-      "register.b4b07198.js"
+      "register.786aab3a.js",
+      "Loader.fc925a98.js",
+      "auth.esm.7a3eb8cb.js"
+    ],
+    "staff/logout.svelte": [
+      "logout.692b437a.js"
     ],
     "staff/login.svelte": [
-      "login.bfef80c3.js"
+      "login.1a450ba0.js",
+      "Loader.fc925a98.js",
+      "auth.esm.7a3eb8cb.js"
     ],
     "earn/index.svelte": [
-      "index.17b7137a.js"
+      "index.0aea7a6e.js"
     ],
     "earn/offerwalls.svelte": [
-      "offerwalls.e97b42a1.js",
-      "Loader.8acab25c.js"
+      "offerwalls.5cfa1454.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "earn/promocodes.svelte": [
-      "promocodes.93000cb2.js",
-      "Loader.8acab25c.js"
+      "promocodes.da5c6a76.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "earn/giveaway.svelte": [
-      "giveaway.6e2c9bef.js",
-      "Loader.8acab25c.js"
+      "giveaway.50b449c0.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "earn/invite.svelte": [
-      "invite.3fdf99a1.js",
-      "Loader.8acab25c.js"
+      "invite.04151620.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "earn/quests.svelte": [
-      "quests.2acfdb2a.js",
-      "Loader.8acab25c.js"
+      "quests.29fa27bb.js",
+      "Success.35c2ec0a.js",
+      "Loader.fc925a98.js"
     ],
     "link.svelte": [
-      "link.a15b4521.js"
+      "link.87afefda.js"
     ],
     "faq.svelte": [
-      "faq.e60fc829.js"
+      "faq.588155f1.js"
     ]
   }
 }

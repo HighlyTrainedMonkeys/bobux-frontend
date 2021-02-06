@@ -67,7 +67,14 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex">
-
+        <div class="flex-shrink-0 flex items-center mr-4">
+          <a href="/">
+            <img
+              class="block h-10 w-auto"
+              src="https://cdn.discordapp.com/attachments/707054667523162134/807165183684247552/main_png_logo.png"
+              alt="Bobux.gg" />
+          </a>
+        </div>
         <div class="hidden sm:ml-2 sm:flex sm:space-x-8">
           <!-- Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <a
@@ -104,8 +111,8 @@
           on:click={authAction}
           type="button"
           class="relative inline-flex items-center px-4 py-2 border
-          border-transparent text-sm font-medium rounded-md text-white
-          bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none
+          border-transparent text-sm font-medium rounded-md text-gray-50
+          bg-blue-500 shadow-sm hover:bg-blue-600 focus:outline-none
           focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
 
           <svg
@@ -183,10 +190,10 @@
   -->
   <div class="{open ? 'block' : 'hidden'} sm:hidden">
     <div class="pt-2 pb-3 space-y-1">
-      <!-- Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+      <!-- Current: "bg-blue-50 border-blue-500 text-blue-600", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
       <a
         href="/earn"
-        class="bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2
+        class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2
         border-l-4 text-base font-medium">
         Earn
       </a>
@@ -194,7 +201,7 @@
         href="/withdraw"
         class="border-transparent text-gray-500 hover:bg-gray-50
         hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2
-        border-l-4 text-base font-medium">
+         text-base font-medium">
         Withdraw
       </a>
       <a
@@ -216,8 +223,8 @@
           on:click={authAction}
           type="button"
           class="relative inline-flex items-center px-4 py-2 border
-          border-transparent text-md font-medium rounded-md text-white
-          bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none
+          border-transparent text-md font-medium rounded-md text-gray-50
+          bg-blue-500 shadow-sm hover:bg-blue-600 focus:outline-none
           focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 w-full">
 
           <span class="-ml-1">{user ? 'Logout' : 'Link account'}</span>

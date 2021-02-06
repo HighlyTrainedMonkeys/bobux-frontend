@@ -91,6 +91,7 @@
               <div class="max-w-xs w-full">
                 <label for="link" class="sr-only">Link</label>
                 <input
+                  value="{config.scheme}://{config.domain}/r/{info.username}"
                   type="text"
                   name="link"
                   id="link"
@@ -107,7 +108,7 @@
                 type="submit"
                 class="mt-3 w-full inline-flex items-center justify-center px-4
                 py-2 border border-transparent shadow-sm font-medium rounded-md
-                text-white bg-blue-600 hover:bg-blue-700 focus:outline-none
+                text-gray-50 bg-blue-500 hover:bg-blue-600 focus:outline-none
                 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0
                 sm:ml-3 sm:w-auto sm:text-sm">
                 Copy

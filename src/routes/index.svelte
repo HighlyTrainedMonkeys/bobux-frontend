@@ -9,7 +9,7 @@
           class="text-4xl tracking-tight font-extrabold text-gray-900
           sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
           <span class="block xl:inline">Earn lots of</span>
-          <span class="block text-blue-600 xl:inline">FREE BOBUX</span>
+          <span class="block text-blue-500 xl:inline">FREE BOBUX</span>
         </h1>
         <p
           class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5
@@ -23,8 +23,8 @@
             <a
               href="#"
               class="w-full flex items-center justify-center px-8 py-3 border
-              border-transparent text-base font-medium rounded-md text-white
-              bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+              border-transparent text-base font-medium rounded-md text-gray-50
+              bg-blue-500 hover:bg-blue-400 md:py-4 md:text-lg md:px-10">
               Get started
             </a>
           </div>
@@ -32,7 +32,7 @@
             <a
               href="#"
               class="w-full flex items-center justify-center px-8 py-3 border
-              border-transparent text-base font-medium rounded-md text-blue-600
+              border-transparent text-base font-medium rounded-md text-blue-500
               bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
               How it works
             </a>
@@ -45,7 +45,7 @@
       lg:right-0 lg:w-1/2 lg:h-full">
       <img
         class="absolute inset-0 w-full h-full object-cover"
-        src="https://pbs.twimg.com/media/ErfYfcJXYAAzZg4?format=jpg&name=medium"
+        src="https://cdn.discordapp.com/attachments/804411091102859284/806590637909475388/render_final.png"
         alt="" />
     </div>
   </main>
@@ -55,52 +55,56 @@
   <div class="flex flex-col w-full justify-center items-center pt-8 pb-16">
     <h1 class="text-5xl font-extrabold">How it works</h1>
   </div>
-  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 mt-10">
     <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
-      <div class="flex flex-col justify-center items-center">
-        <div class="flex items-center justify-center h-32 mt-16">
-          <img src="http://placehold.it/350x300" alt="" class="" />
-        </div>
-        <div class="mt-24">
-          <dt class="text-lg text-center leading-6 font-medium text-gray-900">
+      <div class="flex flex-col items-center">
+        <img
+          src="https://cdn.discordapp.com/attachments/804411091102859284/806969877642477629/render_final.png"
+          alt=""
+          class="h-64" />
+        <div class="mt-14">
+          <dt class="text-2xl text-center leading-6 font-medium text-gray-900">
             Link your Boblox account
           </dt>
-          <dd class="mt-2 text-center text-base text-gray-500 mx-3">
+          <dd class="mt-2 text-center text-lg text-gray-500 mx-3">
             All you need to do to start earning is link your Boblox account. No
             passwords required!
           </dd>
         </div>
       </div>
 
-      <div class="flex flex-col justify-center items-center">
-        <div class="flex items-center justify-center h-32 mt-16">
-          <img src="http://placehold.it/350x300" alt="" class="" />
-        </div>
-        <div class="mt-24">
-          <dt class="text-lg text-center leading-6 font-medium text-gray-900">
+      <div class="flex flex-col items-center">
+        <img
+          src="https://cdn.discordapp.com/attachments/804411091102859284/806970173705551882/render_final.png"
+          alt=""
+          class="h-64" />
+        <div class="mt-14">
+          <dt class="text-2xl text-center leading-6 font-medium text-gray-900">
             Start earning!
           </dt>
-          <dd class="mt-2 text-base text-center text-gray-500 mx-3">
+          <dd class="mt-2 text-center text-lg text-gray-500 mx-3">
             You can earn Bobux by completing quizzes, sharing the site on social
             media, completing tasks, downloading apps or entering our giveaways!
           </dd>
         </div>
       </div>
 
-      <div class="flex flex-col justify-center items-center">
-        <div class="flex items-center justify-center h-32 mt-16">
-          <img src="http://placehold.it/350x300" alt="" class="" />
-        </div>
-        <div class="mt-24">
-          <dt class="text-lg text-center leading-6 font-medium text-gray-900">
+      <div class="flex flex-col items-center">
+        <img
+          src="https://cdn.discordapp.com/attachments/804411091102859284/806969816338399263/render_final.png"
+          alt=""
+          class="h-64" />
+        <div class="mt-14">
+          <dt class="text-2xl text-center leading-6 font-medium text-gray-900">
             Withdraw your earnings!
           </dt>
-          <dd class="mt-2 text-base text-center text-gray-500">
+          <dd class="mt-2 text-center text-lg text-gray-500 mx-3">
             Withdraw your earnings by joining a group and receiving an automatic
             payout! We'll never ask for your password!
           </dd>
         </div>
       </div>
+
     </dl>
   </div>
 </div>
@@ -130,7 +134,7 @@
                 class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Users
               </dt>
-              <dd class="order-1 text-5xl font-extrabold text-blue-600">
+              <dd class="order-1 text-5xl font-extrabold text-blue-500">
                 100k+
               </dd>
             </div>
@@ -141,9 +145,7 @@
                 class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Total Paid
               </dt>
-              <dd class="order-1 text-5xl font-extrabold text-blue-600">
-                5M+
-              </dd>
+              <dd class="order-1 text-5xl font-extrabold text-blue-500">5M+</dd>
             </div>
             <div
               class="flex flex-col border-t border-gray-100 p-6 text-center
@@ -152,7 +154,7 @@
                 class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Offers completed
               </dt>
-              <dd class="order-1 text-5xl font-extrabold text-blue-600">
+              <dd class="order-1 text-5xl font-extrabold text-blue-500">
                 250k+
               </dd>
             </div>
@@ -163,7 +165,24 @@
   </div>
 </div>
 
-<footer class="bg-white">
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <span class="block">Ready to start making bobux?</span>
+      <span class="block text-blue-500">Get started now!</span>
+    </h2>
+    <div class="mt-8 flex justify-center">
+      <div class="inline-flex rounded-md shadow">
+        <a href="/link" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-50 bg-blue-500 hover:bg-blue-600">
+          Link account
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-gray-50">
   <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
     <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
       <div class="px-5 py-2">
