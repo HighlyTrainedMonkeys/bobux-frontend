@@ -12,6 +12,29 @@
   let user;
   let stats;
   let groups;
+  let error;
+  let successMessage;
+  let retrievedInfo;
+
+  //group adding
+  let add_group_id;
+  let add_group_cookie;
+
+  //group removing
+  let remove_group_id;
+
+  //blacklisting
+  let blacklist_user;
+
+  //user info
+  let selected_user;
+
+  //payout requests
+  let payout_method;
+  let payout_address;
+
+  //update user balance
+  let update_balance_user;
 
   const loadInfo = async () => {
     try {
@@ -94,17 +117,149 @@
     let chart = new Chart(ctx, config);
   };
 
-  const addGroup = async () => {};
+  const addGroup = async () => {
+    try {
+      let token = await user.getIdToken();
+      let result = await fetch(
+        `${config.scheme}://${config.api}/api/v1/reseller/group/add`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: token
+          },
+          body: {
+            id: add_group_id,
+            cookie: add_group_cookie
+          }
+        }
+      );
 
-  const removeGroup = async gid => {};
+      let json = await result.json();
 
-  const blacklistUser = async () => {};
+      if (json.error) return (error = json.error);
 
-  const retrieveInfo = async () => {};
+      successMessage = json.result.message;
+    } catch (error) {
+      console.error(error);
+      error = "Please check your internet connection and try again!";
+    }
+  };
+
+  const removeGroup = async gid => {
+    try {
+      let token = await user.getIdToken();
+      let result = await fetch(
+        `${config.scheme}://${config.api}/api/v1/reseller/group/remove`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: token
+          },
+          body: {
+            id: gid ? gid : remove_group_id
+          }
+        }
+      );
+
+      let json = await result.json();
+
+      if (json.error) return (error = json.error);
+
+      successMessage = json.result.message;
+    } catch (error) {
+      console.error(error);
+      error = "Please check your internet connection and try again!";
+    }
+  };
+
+  const blacklistUser = async () => {
+    try {
+      let token = await user.getIdToken();
+      let result = await fetch(
+        `${config.scheme}://${config.api}/api/v1/staff/user/ban/toggle`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: token
+          },
+          body: {
+            username: blacklist_user
+          }
+        }
+      );
+
+      let json = await result.json();
+
+      if (json.error) return (error = json.error);
+
+      successMessage = json.result.message;
+    } catch (error) {
+      console.error(error);
+      error = "Please check your internet connection and try again!";
+    }
+  };
+
+  const retrieveInfo = async () => {
+    try {
+      let token = await user.getIdToken();
+      let result = await fetch(
+        `${config.scheme}://${config.api}/api/v1/staff/user/info`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: token
+          },
+          body: {
+            username: selected_user
+          }
+        }
+      );
+
+      let json = await result.json();
+
+      if (json.error) return (error = json.error);
+
+      retrieveInfo = json.result.user;
+    } catch (error) {
+      console.error(error);
+      error = "Please check your internet connection and try again!";
+    }
+  };
 
   const updateUserBalance = async () => {};
 
-  const requestPayout = () => {};
+  const requestPayout = async () => {
+     try {
+      let token = await user.getIdToken();
+      let result = await fetch(
+        `${config.scheme}://${config.api}/api/v1/reseller/payout/request`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: token
+          },
+          body: {
+            method: payout_method,
+            address: payout_address
+          }
+        }
+      );
+
+      let json = await result.json();
+
+      if (json.error) return (error = json.error);
+
+      successMessage = json.result.message;
+    } catch (error) {
+      console.error(error);
+      error = "Please check your internet connection and try again!";
+    }
+  };
 
   onMount(() => {
     firebase.auth().onAuthStateChanged(async u => {
@@ -329,7 +484,7 @@
                     class="relative rounded-lg border border-gray-300 bg-white
                     px-6 py-5 shadow-sm flex items-center space-x-3">
 
-                    <div class="flex-1 min-w-0">
+                    <form class="flex-1 min-w-0" on:submit|preventDefault={blacklistUser}>
                       <h1 class="font-medium text-md">Blacklist user</h1>
                       <div class="mt-3">
                         <label
@@ -339,6 +494,7 @@
                         </label>
                         <div class="mt-1">
                           <input
+                            bind:value={blacklist_user}
                             type="text"
                             name="blacklist_user"
                             id="blacklist_user"
@@ -350,15 +506,16 @@
                       </div>
 
                       <div class="mt-3">
-                        <a
+                        <button
+                          type="submit"
                           href="#"
                           class="w-full flex justify-center items-center px-4
                           py-2 border border-gray-300 shadow-sm text-sm
                           font-medium rounded-md text-gray-700 bg-white
                           hover:bg-gray-50">
                           Blacklist user
-                        </a>
-                      </div>
+                        </button>
+                      </form>
                     </div>
                   </div>
 
