@@ -10,7 +10,7 @@
       console.log("link clicked");
       if (!username) return;
 
-      let result = await fetch(`${config.scheme}://${config.api}`, {
+      let result = await fetch(`${config.scheme}://${config.api}/api/v1/user/link`, {
         method: "POST",
         headers: {
           "content-type": "application/json"

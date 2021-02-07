@@ -57,8 +57,7 @@
       }
     } catch (error) {
       console.error(error);
-      //TODO: enable this outside of development environment
-      //goto("/");
+      goto("/");
     }
   });
 </script>
