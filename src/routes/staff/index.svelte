@@ -233,7 +233,7 @@
   const updateUserBalance = async () => {};
 
   const requestPayout = async () => {
-     try {
+    try {
       let token = await user.getIdToken();
       let result = await fetch(
         `${config.scheme}://${config.api}/api/v1/reseller/payout/request`,
@@ -335,12 +335,10 @@
                           Welcome back,
                         </p>
                         <p class="text-xl font-bold text-gray-900 sm:text-2xl">
-                          Grangus
-                          <!-- {user.displayName} -->
+                          {user.displayName}
                         </p>
                         <p class="text-sm font-medium text-gray-600">
-                          Administrator, Reseller
-                          <!-- {user.permissions.join(", ")} -->
+                          {user.permissions.join(', ')}
                         </p>
                       </div>
                     </div>
@@ -360,26 +358,17 @@
                   divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0
                   sm:divide-x">
                   <div class="px-6 py-5 text-sm font-medium text-center">
-                    <span class="text-gray-900">
-                      129,643
-                      <!--{stats.paid}-->
-                    </span>
+                    <span class="text-gray-900">{stats.paid}</span>
                     <span class="text-gray-600">Robux paid out</span>
                   </div>
 
                   <div class="px-6 py-5 text-sm font-medium text-center">
-                    <span class="text-gray-900">
-                      1,291,281
-                      <!--{stats.users}-->
-                    </span>
+                    <span class="text-gray-900">{stats.users}</span>
                     <span class="text-gray-600">Users registered</span>
                   </div>
 
                   <div class="px-6 py-5 text-sm font-medium text-center">
-                    <span class="text-gray-900">
-                      4
-                      <!--{groups.length}-->
-                    </span>
+                    <span class="text-gray-900">{groups.length}</span>
                     <span class="text-gray-600">Groups on site</span>
                   </div>
                 </div>
@@ -470,172 +459,168 @@
             </section>
 
             <!-- admin actions panel -->
-            <div>
+            <div
+              class="rounded-lg bg-white overflow-hidden shadow divide-y
+              divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-1 sm:gap-px">
+              <h2
+                class="text-gray-500 text-xs font-medium uppercase tracking-wide
+                m-4">
+                Admin actions
+              </h2>
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mx-4 mb-4">
+                <div
+                  class="relative rounded-lg border border-gray-300 bg-white
+                  px-6 py-5 shadow-sm flex items-center space-x-3">
+
+                  <form
+                    class="flex-1 min-w-0"
+                    on:submit|preventDefault={blacklistUser}>
+                    <h1 class="font-medium text-md">Blacklist user</h1>
+                    <div class="mt-3">
+                      <label
+                        for="blacklist_user"
+                        class="block text-sm font-medium text-gray-700">
+                        Username
+                      </label>
+                      <div class="mt-1">
+                        <input
+                          bind:value={blacklist_user}
+                          type="text"
+                          name="blacklist_user"
+                          id="blacklist_user"
+                          class="shadow-sm focus:ring-blue-500
+                          focus:border-blue-500 block w-full sm:text-sm
+                          border-gray-300 rounded-md"
+                          placeholder="Builderman" />
+                      </div>
+                    </div>
+
+                    <div class="mt-3">
+                      <button
+                        type="submit"
+                        href="#"
+                        class="w-full flex justify-center items-center px-4 py-2
+                        border border-gray-300 shadow-sm text-sm font-medium
+                        rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Blacklist user
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
               <div
-                class="rounded-lg bg-white overflow-hidden shadow divide-y
-                divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-1 sm:gap-px">
-                <h2
-                  class="text-gray-500 text-xs font-medium uppercase
-                  tracking-wide m-4">
-                  Admin actions
-                </h2>
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mx-4 mb-4">
-                  <div
-                    class="relative rounded-lg border border-gray-300 bg-white
-                    px-6 py-5 shadow-sm flex items-center space-x-3">
+                class="relative rounded-lg border border-gray-300 bg-white px-6
+                py-5 shadow-sm flex items-center space-x-3">
 
-                    <form class="flex-1 min-w-0" on:submit|preventDefault={blacklistUser}>
-                      <h1 class="font-medium text-md">Blacklist user</h1>
-                      <div class="mt-3">
-                        <label
-                          for="blacklist_user"
-                          class="block text-sm font-medium text-gray-700">
-                          Username
-                        </label>
-                        <div class="mt-1">
-                          <input
-                            bind:value={blacklist_user}
-                            type="text"
-                            name="blacklist_user"
-                            id="blacklist_user"
-                            class="shadow-sm focus:ring-blue-500
-                            focus:border-blue-500 block w-full sm:text-sm
-                            border-gray-300 rounded-md"
-                            placeholder="Builderman" />
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <button
-                          type="submit"
-                          href="#"
-                          class="w-full flex justify-center items-center px-4
-                          py-2 border border-gray-300 shadow-sm text-sm
-                          font-medium rounded-md text-gray-700 bg-white
-                          hover:bg-gray-50">
-                          Blacklist user
-                        </button>
-                      </form>
+                <div class="flex-1 min-w-0">
+                  <h1 class="font-medium text-md">Update user balance</h1>
+                  <div class="mt-3">
+                    <label
+                      for="balance_update_user"
+                      class="block text-sm font-medium text-gray-700">
+                      Username
+                    </label>
+                    <div class="mt-1">
+                      <input
+                        type="text"
+                        name="balance_update_user"
+                        id="balance_update_user"
+                        class="shadow-sm focus:ring-blue-500
+                        focus:border-blue-500 block w-full sm:text-sm
+                        border-gray-300 rounded-md"
+                        placeholder="Builderman" />
                     </div>
                   </div>
 
-                  <div
-                    class="relative rounded-lg border border-gray-300 bg-white
-                    px-6 py-5 shadow-sm flex items-center space-x-3">
-
-                    <div class="flex-1 min-w-0">
-                      <h1 class="font-medium text-md">Update user balance</h1>
-                      <div class="mt-3">
-                        <label
-                          for="balance_update_user"
-                          class="block text-sm font-medium text-gray-700">
-                          Username
-                        </label>
-                        <div class="mt-1">
-                          <input
-                            type="text"
-                            name="balance_update_user"
-                            id="balance_update_user"
-                            class="shadow-sm focus:ring-blue-500
-                            focus:border-blue-500 block w-full sm:text-sm
-                            border-gray-300 rounded-md"
-                            placeholder="Builderman" />
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <label
-                          for="balance_update_new"
-                          class="block text-sm font-medium text-gray-700">
-                          Balance
-                        </label>
-                        <div class="mt-1">
-                          <input
-                            type="number"
-                            name="balance_update_new"
-                            id="balance_update_new"
-                            class="shadow-sm focus:ring-blue-500
-                            focus:border-blue-500 block w-full sm:text-sm
-                            border-gray-300 rounded-md"
-                            placeholder="100" />
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <a
-                          href="#"
-                          class="w-full flex justify-center items-center px-4
-                          py-2 border border-gray-300 shadow-sm text-sm
-                          font-medium rounded-md text-gray-700 bg-white
-                          hover:bg-gray-50">
-                          Update user
-                        </a>
-                      </div>
+                  <div class="mt-3">
+                    <label
+                      for="balance_update_new"
+                      class="block text-sm font-medium text-gray-700">
+                      Balance
+                    </label>
+                    <div class="mt-1">
+                      <input
+                        type="number"
+                        name="balance_update_new"
+                        id="balance_update_new"
+                        class="shadow-sm focus:ring-blue-500
+                        focus:border-blue-500 block w-full sm:text-sm
+                        border-gray-300 rounded-md"
+                        placeholder="100" />
                     </div>
                   </div>
 
-                  <div
-                    class="relative rounded-lg border border-gray-300 bg-white
-                    px-6 py-5 shadow-sm flex items-center space-x-3">
-
-                    <div class="flex-1 min-w-0">
-                      <h1 class="font-medium text-md">
-                        Generate registration token
-                      </h1>
-
-                      <div class="mt-3">
-                        <a
-                          href="#"
-                          class="w-full flex justify-center items-center px-4
-                          py-2 border border-gray-300 shadow-sm text-sm
-                          font-medium rounded-md text-gray-700 bg-white
-                          hover:bg-gray-50">
-                          Generate
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="relative rounded-lg border border-gray-300 bg-white
-                    px-6 py-5 shadow-sm flex items-center space-x-3">
-
-                    <div class="flex-1 min-w-0">
-                      <h1 class="font-medium text-md">Retrieve staff info</h1>
-                      <div class="mt-3">
-                        <label
-                          for="staff_username"
-                          class="block text-sm font-medium text-gray-700">
-                          Username
-                        </label>
-                        <div class="mt-1">
-                          <input
-                            type="text"
-                            name="staff_username"
-                            id="staff_username"
-                            class="shadow-sm focus:ring-blue-500
-                            focus:border-blue-500 block w-full sm:text-sm
-                            border-gray-300 rounded-md"
-                            placeholder="grangus" />
-                        </div>
-                      </div>
-
-                      <div class="mt-3">
-                        <a
-                          href="#"
-                          class="w-full flex justify-center items-center px-4
-                          py-2 border border-gray-300 shadow-sm text-sm
-                          font-medium rounded-md text-gray-700 bg-white
-                          hover:bg-gray-50">
-                          Retrieve info
-                        </a>
-                      </div>
-                    </div>
+                  <div class="mt-3">
+                    <a
+                      href="#"
+                      class="w-full flex justify-center items-center px-4 py-2
+                      border border-gray-300 shadow-sm text-sm font-medium
+                      rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                      Update user
+                    </a>
                   </div>
                 </div>
+              </div>
 
+              <div
+                class="relative rounded-lg border border-gray-300 bg-white px-6
+                py-5 shadow-sm flex items-center space-x-3">
+
+                <div class="flex-1 min-w-0">
+                  <h1 class="font-medium text-md">
+                    Generate registration token
+                  </h1>
+
+                  <div class="mt-3">
+                    <a
+                      href="#"
+                      class="w-full flex justify-center items-center px-4 py-2
+                      border border-gray-300 shadow-sm text-sm font-medium
+                      rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                      Generate
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="relative rounded-lg border border-gray-300 bg-white px-6
+                py-5 shadow-sm flex items-center space-x-3">
+
+                <div class="flex-1 min-w-0">
+                  <h1 class="font-medium text-md">Retrieve staff info</h1>
+                  <div class="mt-3">
+                    <label
+                      for="staff_username"
+                      class="block text-sm font-medium text-gray-700">
+                      Username
+                    </label>
+                    <div class="mt-1">
+                      <input
+                        type="text"
+                        name="staff_username"
+                        id="staff_username"
+                        class="shadow-sm focus:ring-blue-500
+                        focus:border-blue-500 block w-full sm:text-sm
+                        border-gray-300 rounded-md"
+                        placeholder="grangus" />
+                    </div>
+                  </div>
+
+                  <div class="mt-3">
+                    <a
+                      href="#"
+                      class="w-full flex justify-center items-center px-4 py-2
+                      border border-gray-300 shadow-sm text-sm font-medium
+                      rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                      Retrieve info
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
 
           <!-- Right column -->
