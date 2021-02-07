@@ -15,9 +15,9 @@
         headers: {
           "content-type": "application/json"
         },
-        body: {
+        body: JSON.stringify({
           username
-        }
+        })
       });
 
       if (result.status == 200) {
