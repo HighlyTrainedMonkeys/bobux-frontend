@@ -7,7 +7,7 @@
 
   let loaded = false;
   let error;
-  let selected = "offertoro";
+  let selected = "adgate";
   let cache = []; //{offerwall: "offertoro", offers: []}
 
   let loadOffers;
@@ -52,16 +52,16 @@
         name="tabs"
         class="block w-full focus:ring-indigo-500 focus:border-indigo-500
         border-gray-300 rounded-md">
-        <option selected>Offertoro</option>
-        <option>AdGate</option>
+        <!-- <option selected>Offertoro</option> -->
+        <option selected>AdGate</option>
         <option>AyeTStudios</option>
-        <option>KiwiWall</option>
+        <!-- <option>KiwiWall</option> -->
       </select>
     </div>
     <div class="hidden sm:block">
       <div class="border-b border-gray-200">
         <nav class="-mb-px flex" aria-label="Tabs">
-          <div
+          <!-- <div
             on:click={() => {
               selected = 'offertoro';
             }}
@@ -69,7 +69,7 @@
             cursor-pointer w-1/4 py-4 px-1 text-center border-b-2 font-medium
             text-sm">
             Offertoro
-          </div>
+          </div> -->
           <div
             on:click={() => {
               selected = 'adgate';
@@ -88,7 +88,7 @@
             text-sm">
             AyeTStudios
           </div>
-          <div
+          <!-- <div
             on:click={() => {
               selected = 'kiwiwall';
             }}
@@ -96,7 +96,7 @@
             cursor-pointer w-1/4 py-4 px-1 text-center border-b-2 font-medium
             text-sm">
             KiwiWall
-          </div>
+          </div> -->
         </nav>
       </div>
     </div>
