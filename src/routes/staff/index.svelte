@@ -470,7 +470,7 @@
             </section>
 
             <!-- admin actions panel -->
-            <section>
+            <div>
               <div
                 class="rounded-lg bg-white overflow-hidden shadow divide-y
                 divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-1 sm:gap-px">
@@ -635,7 +635,7 @@
                 </div>
 
               </div>
-            </section>
+            </div>
           </div>
 
           <!-- Right column -->
