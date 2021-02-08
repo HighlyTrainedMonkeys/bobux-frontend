@@ -21,10 +21,10 @@
           headers: {
             "content-type": "application/json"
           },
-          body: {
+          body: JSON.stringify({
             code,
             token
-          }
+          })
         }
       );
 

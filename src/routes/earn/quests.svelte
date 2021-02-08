@@ -23,9 +23,9 @@
               "content-type": "application/json",
               username: localStorage.getItem("roblox-user")
             },
-            body: {
+            body: JSON.stringify({
               milestone
-            }
+            })
           }
         );
 

@@ -128,10 +128,10 @@
             "content-type": "application/json",
             authorization: token
           },
-          body: {
+          body: JSON.stringify({
             id: add_group_id,
             cookie: add_group_cookie
-          }
+          })
         }
       );
 
@@ -157,9 +157,9 @@
             "content-type": "application/json",
             authorization: token
           },
-          body: {
+          body: JSON.stringify( {
             id: gid ? gid : remove_group_id
-          }
+          })
         }
       );
 
@@ -185,9 +185,9 @@
             "content-type": "application/json",
             authorization: token
           },
-          body: {
+          body: JSON.stringify({
             username: blacklist_user
-          }
+          })
         }
       );
 
@@ -213,9 +213,9 @@
             "content-type": "application/json",
             authorization: token
           },
-          body: {
+          body: JSON.stringify({
             username: selected_user
-          }
+          })
         }
       );
 
@@ -243,10 +243,10 @@
             "content-type": "application/json",
             authorization: token
           },
-          body: {
+          body: JSON.stringify({
             method: payout_method,
             address: payout_address
-          }
+          })
         }
       );
 

@@ -23,12 +23,12 @@
           headers: {
             "content-type": "application/json"
           },
-          body: {
+          body: JSON.stringify({
             email,
             username,
             token,
             password
-          }
+          })
         }
       );
 
