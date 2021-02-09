@@ -18,6 +18,12 @@
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let name = selected.toLowerCase();
+      console.log(name);
+      
+      cache.forEach(item => {
+        console.log(item);
+      });
+
       let cached = cache.get(name);
 
       console.log(cached);
