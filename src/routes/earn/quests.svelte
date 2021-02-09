@@ -43,7 +43,12 @@
 
     try {
       let result = await fetch(
-        `${config.scheme}://${config.api}/api/v1/reward/meta`
+        `${config.scheme}://${config.api}/api/v1/reward/meta`,
+        {
+          headers: {
+            username: localStorage.getItem("roblox-user")
+          }
+        }
       );
       let json = await result.json();
 
