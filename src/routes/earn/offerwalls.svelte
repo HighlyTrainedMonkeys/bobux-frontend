@@ -26,7 +26,7 @@
 
       let cached = cache.get(name);
 
-      console.log(cached);
+      console.log("cached: ", cached);
 
       if (cached.length > 0) return;
 
