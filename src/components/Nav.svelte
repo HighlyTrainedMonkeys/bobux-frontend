@@ -19,6 +19,7 @@
 
   const update = () => {
     user = localStorage.getItem("roblox-user");
+    showLinkModal = false;
   };
 
   //link account or logout based on whether or not the user exists
