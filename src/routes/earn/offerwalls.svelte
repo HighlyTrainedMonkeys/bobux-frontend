@@ -8,21 +8,22 @@
   let loaded = false;
   let error;
   let selected = "adgate";
-  let cache = [
-    { offerwall: "adgate", offers: [] },
-    { offerwall: "ayetstudios", offers: [] }
-  ]; //{offerwall: "offertoro", offers: []}
+  let cache = new Map();
+  cache.set("adgate", []);
+  cache.set("ayetstudios", []);
 
   let loadOffers = () => {};
 
   onMount(() => {
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
-      let cached = cache.find(c => c.offerwall == selected);
-      if (cached.offers.length > 0) return;
+      let name = selected;
+      let cached = cache.get(name);
+
+      if (cached.length > 0) return;
 
       let result = await fetch(
-        `${config.scheme}://${config.api}/api/v1/offerwall/${selected}`,
+        `${config.scheme}://${config.api}/api/v1/offerwall/${name}`,
         {
           headers: {
             username: localStorage.getItem("roblox-user")
@@ -34,7 +35,7 @@
 
       if (json.status == "error") return (error = json.error);
 
-      cache.push({ offerwall: selected, offers: json.result });
+      cache.set(name, json.result.offers);
       loaded = true;
     };
 
@@ -111,8 +112,8 @@
       class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y
       divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px mt-8 mb-14">
       <!-- offers go here -->
-      {#if cache.find(c => c.offerwall == selected).offers}
-        {#each cache.find(c => c.offerwall == selected).offers as offer}
+      {#if cache.get(selected).offers > 0}
+        {#each cache.get(selected).offers as offer}
           <div
             class="relative group bg-white p-6 focus-within:ring-2
             focus-within:ring-inset focus-within:ring-indigo-500">
