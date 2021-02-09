@@ -11,7 +11,7 @@
   let cache = []; //{offerwall: "offertoro", offers: []}
 
   let loadOffers = () => {};
-  
+
   $: changed = loadOffers();
 
   onMount(() => {
@@ -54,8 +54,8 @@
         class="block w-full focus:ring-indigo-500 focus:border-indigo-500
         border-gray-300 rounded-md">
         <!-- <option selected>Offertoro</option> -->
-        <option selected>AdGate</option>
-        <option>AyeTStudios</option>
+        <option>AdGate</option>
+        <option selected>AyeTStudios</option>
         <!-- <option>KiwiWall</option> -->
       </select>
     </div>
