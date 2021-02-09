@@ -87,7 +87,7 @@
             <div class="mt-2 max-w-xl text-sm text-gray-500">
               <p>Make sure your friends sign up using this link.</p>
             </div>
-            <form class="mt-5 sm:flex sm:items-center">
+            <form class="mt-5 sm:flex sm:items-center" on:submit|preventDefault={() => {}}>
               <div class="max-w-xs w-full">
                 <label for="link" class="sr-only">Link</label>
                 <input
