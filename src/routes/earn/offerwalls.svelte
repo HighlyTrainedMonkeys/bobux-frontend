@@ -9,7 +9,7 @@
   let error;
   let selected = "adgate";
   let cache = new Map();
-  
+
   cache.set("adgate", []);
   cache.set("ayetstudios", []);
 
@@ -34,9 +34,7 @@
       if (json.status == "error") return (error = json.error);
 
       cache.set(name, json.result.offers);
-      cache.forEach(i => {
-        console.log(i);
-      })
+      cache = cache; //doing this to get reactivity
       loaded = true;
     };
 
@@ -108,11 +106,15 @@
         </nav>
       </div>
     </div>
+    {#if cache.get(selected.toLowerCase()).length == 0}
+      <h1 class="text-center text-2xl py-10">Loading offers...</h1>
+    {:else}
+      <div
+        class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y
+        divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px mt-8
+        mb-14">
+        <!-- offers go here -->
 
-    <div
-      class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y
-      divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px mt-8 mb-14">
-      <!-- offers go here -->
         {#each cache.get(selected.toLowerCase()) as offer}
           <div
             class="relative group bg-gray-50 p-6 focus-within:ring-2
@@ -152,7 +154,8 @@
             </span>
           </div>
         {/each}
-    </div>
+      </div>
+    {/if}
 
   </div>
 {/if}
