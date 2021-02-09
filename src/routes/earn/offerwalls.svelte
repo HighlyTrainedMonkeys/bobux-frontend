@@ -9,6 +9,7 @@
   let error;
   let selected = "adgate";
   let cache = new Map();
+  
   cache.set("adgate", []);
   cache.set("ayetstudios", []);
 
@@ -18,9 +19,6 @@
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let name = selected.toLowerCase();
-
-      console.log(cache.get(name), cache.get(name).length);
-      if (cache.get(name).length > 0) return;
 
       let result = await fetch(
         `${config.scheme}://${config.api}/api/v1/offerwall/${name}`,
