@@ -115,7 +115,7 @@
             class="relative group bg-white p-6 focus-within:ring-2
             focus-within:ring-inset focus-within:ring-indigo-500">
             <div>
-              <img src={offer.icon} alt="" />
+              <img src={offer.icon} alt="" class="w-20 h-auto" />
             </div>
             <div class="mt-8">
               <h3 class="text-lg font-medium">
