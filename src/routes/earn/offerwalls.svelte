@@ -16,11 +16,10 @@
   let loadOffers = () => {};
 
   onMount(() => {
-    console.log("mounted")
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let cached = cache.find(c => c.offerwall == selected);
-      if (cached) return;
+      if (cached.offers.length > 0) return;
 
       let result = await fetch(
         `${config.scheme}://${config.api}/api/v1/offerwall/${selected}`,
