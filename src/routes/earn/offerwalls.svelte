@@ -10,7 +10,8 @@
   let selected = "adgate";
   let cache = []; //{offerwall: "offertoro", offers: []}
 
-  let loadOffers;
+  let loadOffers = () => {};
+  
   $: changed = loadOffers();
 
   onMount(() => {
