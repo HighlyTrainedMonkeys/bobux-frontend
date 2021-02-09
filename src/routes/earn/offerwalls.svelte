@@ -49,14 +49,15 @@
     <div class="sm:hidden">
       <label for="tabs" class="sr-only">Select an offerwall</label>
       <select
+        on:blur={loadOffers}
         bind:value={selected}
         id="tabs"
         name="tabs"
         class="block w-full focus:ring-indigo-500 focus:border-indigo-500
         border-gray-300 rounded-md">
         <!-- <option selected>Offertoro</option> -->
-        <option>AdGate</option>
-        <option selected>AyeTStudios</option>
+        <option selected>AdGate</option>
+        <option>AyeTStudios</option>
         <!-- <option>KiwiWall</option> -->
       </select>
     </div>
@@ -76,6 +77,7 @@
           <div
             on:click={() => {
               selected = 'adgate';
+              loadOffers();
             }}
             class="{selected.toLowerCase() == 'adgate' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
             cursor-pointer w-1/2 py-4 px-1 text-center border-b-2 font-medium
@@ -85,6 +87,7 @@
           <div
             on:click={() => {
               selected = 'ayetstudios';
+              loadOffers();
             }}
             class="{selected.toLowerCase() == 'ayetstudios' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
             cursor-pointer w-1/2 py-4 px-1 text-center border-b-2 font-medium
