@@ -112,7 +112,6 @@
       class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y
       divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px mt-8 mb-14">
       <!-- offers go here -->
-      {#if cache.get(selected).offers > 0}
         {#each cache.get(selected).offers as offer}
           <div
             class="relative group bg-white p-6 focus-within:ring-2
@@ -152,7 +151,6 @@
             </span>
           </div>
         {/each}
-      {/if}
     </div>
 
   </div>
