@@ -16,6 +16,7 @@
   let loadOffers = () => {};
 
   onMount(() => {
+    console.log("mounted")
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let cached = cache.find(c => c.offerwall == selected);
