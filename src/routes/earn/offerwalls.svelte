@@ -19,6 +19,7 @@
     loadOffers = async () => {
       let name = selected.toLowerCase();
 
+      console.log(cache.get(name), cache.get(name).length);
       if (cache.get(name).length > 0) return;
 
       let result = await fetch(
