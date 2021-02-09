@@ -34,6 +34,9 @@
       if (json.status == "error") return (error = json.error);
 
       cache.set(name, json.result.offers);
+      cache.forEach(i => {
+        console.log(i);
+      })
       loaded = true;
     };
 
@@ -110,12 +113,12 @@
       class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y
       divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px mt-8 mb-14">
       <!-- offers go here -->
-        {#each cache.get(selected) as offer}
+        {#each cache.get(selected.toLowerCase()) as offer}
           <div
-            class="relative group bg-white p-6 focus-within:ring-2
+            class="relative group bg-gray-50 p-6 focus-within:ring-2
             focus-within:ring-inset focus-within:ring-indigo-500">
             <div>
-              <img src={offer.icon} alt="" class="w-20 h-auto" />
+              <img src={offer.icon} alt="" class="w-36 h-auto" />
             </div>
             <div class="mt-8">
               <h3 class="text-lg font-medium">
