@@ -20,6 +20,8 @@
       let name = selected;
       let cached = cache.get(name);
 
+      console.log(cached);
+
       if (cached.length > 0) return;
 
       let result = await fetch(

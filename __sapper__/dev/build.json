@@ -2,73 +2,73 @@
   "bundler": "rollup",
   "shimport": "2.0.4",
   "assets": {
-    "main": "client.6badb00c.js"
+    "main": "client.fe1d1571.js"
   },
   "css": {},
   "dependencies": {
     "index.svelte": [
-      "index.dfb57254.js"
+      "index.5a50b893.js"
     ],
     "withdraw.svelte": [
-      "withdraw.131c8b2b.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "withdraw.b826b4d4.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "discord.svelte": [
-      "discord.ba9efccf.js"
+      "discord.207313be.js"
     ],
     "staff/index.svelte": [
-      "index.c1be63e3.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js",
+      "index.a32dbcdf.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js",
       "auth.esm.7a3eb8cb.js"
     ],
     "staff/register.svelte": [
-      "register.de990c77.js",
-      "Loader.8adb3d84.js",
+      "register.ce2ce493.js",
+      "Loader.3b231338.js",
       "auth.esm.7a3eb8cb.js"
     ],
     "staff/logout.svelte": [
-      "logout.f4702b09.js"
+      "logout.c13e3afc.js"
     ],
     "staff/login.svelte": [
-      "login.942c1347.js",
-      "Loader.8adb3d84.js",
+      "login.6a42be03.js",
+      "Loader.3b231338.js",
       "auth.esm.7a3eb8cb.js"
     ],
     "earn/index.svelte": [
-      "index.79f34249.js"
+      "index.9cdb39e2.js"
     ],
     "earn/offerwalls.svelte": [
-      "offerwalls.7279cdc4.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "offerwalls.e33fa3d8.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "earn/promocodes.svelte": [
-      "promocodes.41a39dd5.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "promocodes.bbcafce4.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "earn/giveaway.svelte": [
-      "giveaway.1c515f41.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "giveaway.ac96a6a6.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "earn/invite.svelte": [
-      "invite.5b65d429.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "invite.9e1613ba.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "earn/quests.svelte": [
-      "quests.b3aa1b1c.js",
-      "Success.29b84aa5.js",
-      "Loader.8adb3d84.js"
+      "quests.2ecd449d.js",
+      "Success.f6bd9be8.js",
+      "Loader.3b231338.js"
     ],
     "link.svelte": [
-      "link.c3f04e23.js"
+      "link.9b4018fa.js"
     ],
     "faq.svelte": [
-      "faq.09cb4c34.js"
+      "faq.a8ef2d97.js"
     ]
   }
 }
