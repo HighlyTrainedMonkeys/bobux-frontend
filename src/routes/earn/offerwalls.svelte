@@ -8,7 +8,10 @@
   let loaded = false;
   let error;
   let selected = "adgate";
-  let cache = []; //{offerwall: "offertoro", offers: []}
+  let cache = [
+    {offerwall: "offertoro", offers: []},
+    {offerwall: "ayetstudios", offers: []}
+  ]; //{offerwall: "offertoro", offers: []}
 
   let loadOffers = () => {};
 
@@ -62,6 +65,7 @@
     <div class="hidden sm:block">
       <div class="border-b border-gray-200">
         <nav class="-mb-px flex" aria-label="Tabs">
+        <!--change width to 1/x-->
           <!-- <div
             on:click={() => {
               selected = 'offertoro';
@@ -76,7 +80,7 @@
               selected = 'adgate';
             }}
             class="{selected.toLowerCase() == 'adgate' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
-            cursor-pointer w-1/4 py-4 px-1 text-center border-b-2 font-medium
+            cursor-pointer w-1/2 py-4 px-1 text-center border-b-2 font-medium
             text-sm">
             AdGate
           </div>
@@ -85,7 +89,7 @@
               selected = 'ayetstudios';
             }}
             class="{selected.toLowerCase() == 'ayetstudios' ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}
-            cursor-pointer w-1/4 py-4 px-1 text-center border-b-2 font-medium
+            cursor-pointer w-1/2 py-4 px-1 text-center border-b-2 font-medium
             text-sm">
             AyeTStudios
           </div>
