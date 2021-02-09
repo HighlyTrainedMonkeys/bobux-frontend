@@ -18,17 +18,8 @@
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let name = selected.toLowerCase();
-      console.log(name);
-      
-      cache.forEach(item => {
-        console.log(item);
-      });
 
-      let cached = cache.get(name);
-
-      console.log("cached: ", cached);
-
-      if (cached.length > 0) return;
+      if (cache.get(name).length > 0) return;
 
       let result = await fetch(
         `${config.scheme}://${config.api}/api/v1/offerwall/${name}`,
