@@ -32,7 +32,7 @@
             <div class="aspect-w-3 aspect-h-2">
               <img
                 class="object-cover shadow-lg rounded-lg"
-                src="http://placehold.it/900x600"
+                src="/adgate.png"
                 alt="" />
             </div>
 
@@ -111,7 +111,7 @@
             <div class="aspect-w-3 aspect-h-2">
               <img
                 class="object-cover shadow-lg rounded-lg"
-                src="http://placehold.it/900x600"
+                src="/ayet.png"
                 alt="" />
             </div>
 
@@ -160,7 +160,7 @@
             <div class="aspect-w-3 aspect-h-2">
               <img
                 class="object-cover shadow-lg rounded-lg"
-                src="http://placehold.it/900x600"
+                src="/youtube.png"
                 alt="" />
             </div>
 
@@ -201,7 +201,7 @@
             <div class="aspect-w-3 aspect-h-2">
               <img
                 class="object-cover shadow-lg rounded-lg"
-                src="http://placehold.it/900x600"
+                src="/twitter.png"
                 alt="" />
             </div>
 
@@ -240,7 +240,7 @@
             <div class="aspect-w-3 aspect-h-2">
               <img
                 class="object-cover shadow-lg rounded-lg"
-                src="http://placehold.it/900x600"
+                src="/discord.png"
                 alt="" />
             </div>
 
