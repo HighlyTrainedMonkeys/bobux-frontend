@@ -52,13 +52,11 @@
       );
       let json = await result.json();
 
-      console.log(json);
-      if ((json.status = "error")) return (error = json.error);
+      if (json.status == "error") return (error = json.error);
 
       completed = json.result.completed;
       milestones = json.result.milestones;
       loaded = true;
-      console.log(loaded);
     } catch (error) {
       console.error(error);
       error =
