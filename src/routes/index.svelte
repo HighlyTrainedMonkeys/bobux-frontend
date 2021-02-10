@@ -75,7 +75,7 @@
 
       <div class="flex flex-col items-center">
         <img
-          src="https://cdn.discordapp.com/attachments/804411091102859284/806970173705551882/render_final.png"
+          src="https://cdn.discordapp.com/attachments/804411091102859284/807873171456786442/render_final.png"
           alt=""
           class="h-64" />
         <div class="mt-14">

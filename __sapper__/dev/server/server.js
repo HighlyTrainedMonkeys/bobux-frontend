@@ -169,7 +169,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           <dd class="${"mt-2 text-center text-lg text-gray-500 mx-3"}">All you need to do to start earning is link your Boblox account. No
             passwords required!
           </dd></div>
-      </div><div class="${"flex flex-col items-center"}"><img src="${"https://cdn.discordapp.com/attachments/804411091102859284/806970173705551882/render_final.png"}" alt="${""}" class="${"h-64"}">
+      </div><div class="${"flex flex-col items-center"}"><img src="${"https://cdn.discordapp.com/attachments/804411091102859284/807873171456786442/render_final.png"}" alt="${""}" class="${"h-64"}">
         <div class="${"mt-14"}"><dt class="${"text-2xl text-center leading-6 font-medium text-gray-900"}">Start earning!
           </dt>
           <dd class="${"mt-2 text-center text-lg text-gray-500 mx-3"}">You can earn Bobux by completing quizzes, sharing the site on social
