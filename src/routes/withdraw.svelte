@@ -56,6 +56,11 @@
   };
 </script>
 
+<svelte:head>
+  <title>Bobux.GG - Withdraw</title>
+</svelte:head>
+
+
 {#if loaded}
   <Loader />
 {:else}

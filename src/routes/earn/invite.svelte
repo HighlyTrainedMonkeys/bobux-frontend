@@ -33,6 +33,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Bobux.GG - Invite Friends</title>
+</svelte:head>
+
 {#if !info}
   <Loader />
 {:else}

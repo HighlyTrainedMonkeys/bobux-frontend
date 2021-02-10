@@ -41,6 +41,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>Bobux.GG - Promocodes</title>
+</svelte:head>
+
 {#if loaded}
   <Loader />
 {:else}

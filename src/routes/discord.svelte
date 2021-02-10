@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Bobux.GG - Discord</title>
+</svelte:head>
+
 <div class="h-screen w-full">
   <div class="mt-8 flex flex-col justify-center items-center">
     <iframe

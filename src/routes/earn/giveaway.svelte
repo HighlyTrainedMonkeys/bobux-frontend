@@ -58,6 +58,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Bobux.GG - Giveaway</title>
+</svelte:head>
+
 {#if !meta}
   <Loader />
 {:else}

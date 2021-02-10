@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Bobux.GG - Earn free Bobux easily!</title>
+</svelte:head>
+
 <div class="relative bg-gray-50">
 
   <main class="lg:relative">

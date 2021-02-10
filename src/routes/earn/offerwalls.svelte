@@ -19,7 +19,7 @@
     let hash = window.location.hash.substr(1);
 
     if (cache.has(hash)) selected = hash;
-    
+
     //have to define it in here so the compiler doesnt throw stupid errors
     loadOffers = async () => {
       let name = selected.toLowerCase();
@@ -45,6 +45,10 @@
     loadOffers();
   });
 </script>
+
+<svelte:head>
+  <title>Bobux.GG - Offerwalls</title>
+</svelte:head>
 
 {#if !loaded}
   <Loader />

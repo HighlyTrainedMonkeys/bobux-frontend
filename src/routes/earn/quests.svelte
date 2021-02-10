@@ -65,6 +65,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Bobux.GG - Quests</title>
+</svelte:head>
+
 {#if !loaded}
   <Loader />
 {:else}
