@@ -1,5 +1,30 @@
 <svelte:head>
-  <title>Bobux.GG - Earn free Bobux easily!</title>
+  <title>Bobux.GG - Earn FREE Bobux!</title>
+  <meta name="title" content="Bobux.GG - Earn FREE Bobux!" />
+  <meta
+    name="description"
+    content="With bobux.gg, you can easily earn tons of free bobux by completing
+    tasks, following our socials, joining giveaways & more!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bobux.gg" />
+  <meta property="og:title" content="Bobux.GG - Earn FREE Bobux!" />
+  <meta
+    property="og:description"
+    content="With bobux.gg, you can easily earn tons of free bobux by completing
+    tasks, following our socials, joining giveaways & more!" />
+  <meta
+    property="og:image"
+    content="https://bobux.gg/embed_image.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bobux.gg/" />
+  <meta property="twitter:title" content="Bobux.GG - Earn FREE Bobux!" />
+  <meta
+    property="twitter:description"
+    content="With bobux.gg, you can easily earn tons of free bobux by completing
+    tasks, following our socials, joining giveaways & more!" />
+  <meta
+    property="twitter:image"
+    content="https://bobux.gg/embed_image.png" />
 </svelte:head>
 
 <div class="relative bg-gray-50">
@@ -171,14 +196,20 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white">
-  <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+  <div
+    class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <h2
+      class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       <span class="block">Ready to start making bobux?</span>
       <span class="block text-blue-500">Get started now!</span>
     </h2>
     <div class="mt-8 flex justify-center">
       <div class="inline-flex rounded-md shadow">
-        <a href="/link" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-50 bg-blue-500 hover:bg-blue-600">
+        <a
+          href="/link"
+          class="inline-flex items-center justify-center px-5 py-3 border
+          border-transparent text-base font-medium rounded-md text-gray-50
+          bg-blue-500 hover:bg-blue-600">
           Link account
         </a>
       </div>
