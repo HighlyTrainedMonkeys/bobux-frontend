@@ -50,7 +50,7 @@
         <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div class="rounded-md shadow">
             <a
-              href="#"
+              href="/link"
               class="w-full flex items-center justify-center px-8 py-3 border
               border-transparent text-base font-medium rounded-md text-gray-50
               bg-blue-500 hover:bg-blue-400 md:py-4 md:text-lg md:px-10">
@@ -59,7 +59,7 @@
           </div>
           <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
             <a
-              href="#"
+              href="#how-it-works"
               class="w-full flex items-center justify-center px-8 py-3 border
               border-transparent text-base font-medium rounded-md text-blue-500
               bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
@@ -80,7 +80,7 @@
   </main>
 </div>
 
-<div class="py-12 bg-gray-50">
+<div class="py-12 bg-gray-50" id="how-it-works">
   <div class="flex flex-col w-full justify-center items-center pt-8 pb-16">
     <h1 class="text-5xl font-extrabold">How it works</h1>
   </div>
@@ -237,24 +237,7 @@
       </div>
     </nav>
     <div class="mt-8 flex justify-center space-x-6">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
-        <span class="sr-only">Facebook</span>
-        <svg
-          class="h-6 w-6"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true">
-          <path
-            fill-rule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128
-            8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89
-            1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63
-            1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clip-rule="evenodd" />
-        </svg>
-      </a>
-
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a href="https://www.instagram.com/bobuxgg/" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Instagram</span>
         <svg
           class="h-6 w-6"
@@ -291,7 +274,7 @@
         </svg>
       </a>
 
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a href="https://twitter.com/bobuxgg" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Twitter</span>
         <svg
           class="h-6 w-6"
@@ -309,7 +292,7 @@
         </svg>
       </a>
 
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a href="https://discord.com/invite/rPHnQjWUBM" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Discord</span>
 
         <svg
@@ -343,7 +326,7 @@
         </svg>
       </a>
 
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a href="https://www.youtube.com/channel/UCnyRtKSBV7kTQxSwhkVXJlg" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">YouTube</span>
 
         <svg
