@@ -79,29 +79,22 @@
           <!-- Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <a
             href="/earn"
-            class="border-blue-500 text-gray-900 inline-flex items-center px-1
-            pt-1 border-b-2 text-sm font-medium">
+            class={segment == 'earn' ? 'border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' : 'border-gray-50 text-gray-500 hover:border-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}>
             Earn
           </a>
           <a
             href="/withdraw"
-            class="border-transparent text-gray-500 hover:border-gray-300
-            hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2
-            text-sm font-medium">
+            class={segment == 'withdraw' ? 'border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' : 'border-gray-50 text-gray-500 hover:border-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}>
             Withdraw
           </a>
           <a
             href="/faq"
-            class="border-transparent text-gray-500 hover:border-gray-300
-            hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2
-            text-sm font-medium">
+            class={segment == 'faq' ? 'border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' : 'border-gray-50 text-gray-500 hover:border-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}>
             FAQ
           </a>
           <a
             href="/discord"
-            class="border-transparent text-gray-500 hover:border-gray-300
-            hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2
-            text-sm font-medium">
+            class={segment == 'discord' ? 'border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' : 'border-gray-50 text-gray-500 hover:border-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}>
             Discord
           </a>
         </div>
@@ -200,8 +193,8 @@
       <a
         href="/withdraw"
         class="border-transparent text-gray-500 hover:bg-gray-50
-        hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2
-         text-base font-medium">
+        hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base
+        font-medium">
         Withdraw
       </a>
       <a
