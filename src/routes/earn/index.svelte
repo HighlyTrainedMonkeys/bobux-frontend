@@ -43,7 +43,7 @@
               </div>
 
               <a
-                href="/earn/offerwalls"
+                href="/earn/offerwalls#adgate"
                 class="inline-flex items-center px-3 py-2 border
                 border-transparent shadow-sm text-sm leading-4 font-medium
                 rounded-md text-gray-50 bg-blue-500 hover:bg-blue-600
@@ -76,7 +76,7 @@
                 alt="" />
             </div>
 
-            <div class="space-y-2">
+            <!-- <div class="space-y-2">
               <div>
                 <h3 class="text-lg leading-6 font-medium">Offertoro</h3>
                 <p class="text-blue-500 text-md">Easy offers</p>
@@ -102,7 +102,7 @@
                     d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-            </div>
+            </div> -->
           </div>
         </li>
 
@@ -121,7 +121,7 @@
                 <p class="text-blue-500 text-md">Big bobux</p>
               </div>
               <a
-                href="/earn/offerwalls"
+                href="/earn/offerwalls#ayetstudios"
                 class="inline-flex items-center px-3 py-2 border
                 border-transparent shadow-sm text-sm leading-4 font-medium
                 rounded-md text-gray-50 bg-blue-500 hover:bg-blue-600
