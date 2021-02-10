@@ -67,7 +67,7 @@
           </div>
         </li>
 
-        <li>
+        <!-- <li>
           <div class="space-y-4">
             <div class="aspect-w-3 aspect-h-2">
               <img
@@ -76,7 +76,7 @@
                 alt="" />
             </div>
 
-            <!-- <div class="space-y-2">
+            <div class="space-y-2">
               <div>
                 <h3 class="text-lg leading-6 font-medium">Offertoro</h3>
                 <p class="text-blue-500 text-md">Easy offers</p>
@@ -102,9 +102,9 @@
                     d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-            </div> -->
+            </div> 
           </div>
-        </li>
+        </li> -->
 
         <li>
           <div class="space-y-4">
