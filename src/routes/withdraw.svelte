@@ -100,6 +100,7 @@
             </label>
             <div class="mt-1">
               <input
+                bind:value={amount}
                 type="number"
                 name="amount"
                 id="amount"
