@@ -26,6 +26,7 @@
   const authAction = () => {
     if (user) {
       localStorage.removeItem("roblox-user");
+      user = null;
       goto("/");
     } else {
       showLinkModal = true;
