@@ -24,9 +24,9 @@
 
   //link account or logout based on whether or not the user exists
   const authAction = () => {
-    console.log(user);
     if (user) {
       localStorage.removeItem("roblox-user");
+      goto("/")
     } else {
       showLinkModal = true;
     }
@@ -51,6 +51,9 @@
 
       if (json.result) {
         user = json.result;
+        if(segment == "/") {
+          goto("/earn")
+        }
       } else {
         if (segment == "earn" || segment == "withdraw") {
           goto("/");
