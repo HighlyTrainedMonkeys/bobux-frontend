@@ -1,3 +1,14 @@
+<script>
+  import { onMount } from "svelte";
+  import { goto } from "@sapper/app";
+  
+  onMount(() => {
+    let user = localStorage.getItem("roblox-user");
+
+    if (user) goto("/earn");
+  });
+</script>
+
 <svelte:head>
   <title>Bobux.GG - Earn FREE Bobux!</title>
   <meta name="title" content="Bobux.GG - Earn FREE Bobux!" />
@@ -12,9 +23,7 @@
     property="og:description"
     content="With bobux.gg, you can easily earn tons of free bobux by completing
     tasks, following our socials, joining giveaways & more!" />
-  <meta
-    property="og:image"
-    content="https://bobux.gg/embed_image.png" />
+  <meta property="og:image" content="https://bobux.gg/embed_image.png" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://bobux.gg/" />
   <meta property="twitter:title" content="Bobux.GG - Earn FREE Bobux!" />
@@ -22,9 +31,7 @@
     property="twitter:description"
     content="With bobux.gg, you can easily earn tons of free bobux by completing
     tasks, following our socials, joining giveaways & more!" />
-  <meta
-    property="twitter:image"
-    content="https://bobux.gg/embed_image.png" />
+  <meta property="twitter:image" content="https://bobux.gg/embed_image.png" />
 </svelte:head>
 
 <div class="relative bg-gray-50">
@@ -237,7 +244,9 @@
       </div>
     </nav>
     <div class="mt-8 flex justify-center space-x-6">
-      <a href="https://www.instagram.com/bobuxgg/" class="text-gray-400 hover:text-gray-500">
+      <a
+        href="https://www.instagram.com/bobuxgg/"
+        class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Instagram</span>
         <svg
           class="h-6 w-6"
@@ -274,7 +283,9 @@
         </svg>
       </a>
 
-      <a href="https://twitter.com/bobuxgg" class="text-gray-400 hover:text-gray-500">
+      <a
+        href="https://twitter.com/bobuxgg"
+        class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Twitter</span>
         <svg
           class="h-6 w-6"
@@ -292,7 +303,9 @@
         </svg>
       </a>
 
-      <a href="https://discord.com/invite/rPHnQjWUBM" class="text-gray-400 hover:text-gray-500">
+      <a
+        href="https://discord.com/invite/rPHnQjWUBM"
+        class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Discord</span>
 
         <svg
@@ -326,7 +339,9 @@
         </svg>
       </a>
 
-      <a href="https://www.youtube.com/channel/UCnyRtKSBV7kTQxSwhkVXJlg" class="text-gray-400 hover:text-gray-500">
+      <a
+        href="https://www.youtube.com/channel/UCnyRtKSBV7kTQxSwhkVXJlg"
+        class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">YouTube</span>
 
         <svg

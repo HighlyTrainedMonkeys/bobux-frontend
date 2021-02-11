@@ -1,18 +1,10 @@
 <script>
   import { onMount } from "svelte";
-  import { goto, stores } from "@sapper/app";
+  import { goto } from "@sapper/app";
   import LinkModal from "./LinkModal.svelte";
   import ErrorModal from "./ErrorModal.svelte";
 
   import config from "../config.js";
-
-  const { page } = stores();
-
-  page.subscribe(() => {
-    if (user && segment == "/") {
-      goto("/earn");
-    }
-  });
 
   export let segment;
 
