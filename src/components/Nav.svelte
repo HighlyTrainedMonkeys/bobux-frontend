@@ -13,6 +13,10 @@
   let user;
   let error;
 
+  if (user && segment == "/") {
+    goto("/earn");
+  }
+  
   const toggle = () => {
     open = !open;
   };
@@ -26,7 +30,7 @@
   const authAction = () => {
     if (user) {
       localStorage.removeItem("roblox-user");
-      goto("/")
+      goto("/");
     } else {
       showLinkModal = true;
     }
@@ -51,8 +55,8 @@
 
       if (json.result) {
         user = json.result;
-        if(segment == "/") {
-          goto("/earn")
+        if (segment == "/") {
+          goto("/earn");
         }
       } else {
         if (segment == "earn" || segment == "withdraw") {
@@ -189,22 +193,22 @@
       <!-- Current: "bg-blue-50 border-blue-500 text-blue-600", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
       <a
         href="/earn"
-        class={segment == "earn" ? "bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium"}>
+        class={segment == 'earn' ? 'bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium'}>
         Earn
       </a>
       <a
         href="/withdraw"
-        class={segment == "withdraw" ? "bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium"}>
+        class={segment == 'withdraw' ? 'bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium'}>
         Withdraw
       </a>
       <a
         href="/faq"
-        class={segment == "faq" ? "bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium"}>
+        class={segment == 'faq' ? 'bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium'}>
         FAQ
       </a>
       <a
         href="/discord"
-        class={segment == "discord" ? "bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium"}>
+        class={segment == 'discord' ? 'bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium'}>
         Discord
       </a>
       <div class="mx-3">
